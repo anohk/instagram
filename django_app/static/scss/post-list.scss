@@ -1,0 +1,134 @@
+@import "variables";
+
+
+#wrap > .content-container > .post-list-container {
+  margin: 0 auto;
+  width: 600px;
+
+  article.post {
+    border: 1px solid $color-border-post;
+    border-radius: 3px;
+    background-color: white;
+    margin-bottom: 60px;
+
+    header.post-header {
+      padding: 14px 20px;
+      font-size: 14px;
+
+      .header-username {
+        display: inline-block;
+      }
+      .header-date {
+        float: right;
+      }
+      form {
+        display: inline-block;
+        .btn-delete-post {
+          display: inline-block;
+          margin-left: 10px;
+          border: 1px solid #FF5252;
+          border-radius: 3px;
+          padding: 3px 6px;
+          color: #FF5252;
+
+        }
+      }
+
+    }
+    .post-image-container {
+      font-size: 0;
+      img.post-image {
+        width: 100%;
+      }
+    }
+
+
+    .post-bottom-container {
+      padding: 24px;
+      .post-content {
+        margin-bottom: 5px;
+      }
+      .post-like-users {
+        margin-bottom: 5px;
+      }
+      .post-like-count {
+        display: inline-block;
+        margin: 6px 0px;
+        font-weight: bold;
+        color: #333;
+      }
+      .post-comments {
+        border-bottom: 1px solid $color-border-post;
+        padding-bottom: 20px;
+
+        .post-comment{
+          .comment-author {
+            display: inline-block;
+            font-weight: bold;
+            margin-right: 5px;
+          }
+          .comment-content {
+            display: inline-block;
+          }
+          form {
+            display: inline-block;
+            margin-left: 10px;
+            .btn-delete-comment {
+              display: inline-block;
+              // border: 1px solid #FF5252;
+              border-radius: 3px;
+              padding: 3px;
+              box-sizing: border-box;
+              color: #E57373;
+
+            }
+          }
+
+
+
+        }
+      }
+
+      .post-comment-form-container {
+        padding-top:20px;
+        position: relative;
+        form.form-like{
+          float: left;
+        }
+        .btn-like {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          margin-right: 5px;
+          //기본 button 스타일을 없앤다
+          padding: 0;
+          background-color: transparent;
+          border: none;
+        }
+        input.input-comment {
+          border: none;
+          display: inline-block;
+          vertical-align: top;
+          position: absolute;
+          width: 90%;
+          left: 30px;
+          height: 24px;
+          box-sizing: border-box;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  a#btn-add-post{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: 2px solid $color-border;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    border-radius: 3px;
+
+  }
+}

@@ -1,0 +1,28 @@
+.sprites-logo, .sprites-discover, .sprites-like, .sprites-user, .sprites-heart-empty, .sprites-heart-full {
+  background-image: url(/static/images/sprites.png);
+  background-size: 352px 339px;
+}
+
+.sprites-logo {
+  background-position: -176px 0;
+}
+
+.sprites-discover {
+  background-position: -200px -254px;
+}
+
+.sprites-like {
+  background-position: -225px -254px;
+}
+
+.sprites-user {
+  background-position: -150px -254px;
+}
+
+.sprites-heart-empty {
+  background-position: -281px -206px;
+}
+
+.sprites-heart-full {
+  background-position: -325px -176px;
+}

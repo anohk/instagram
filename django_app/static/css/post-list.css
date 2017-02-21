@@ -1,0 +1,135 @@
+#wrap > .content-container > .post-list-container {
+  margin: 0 auto;
+  width: 600px;
+}
+
+#wrap > .content-container > .post-list-container article.post {
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background-color: white;
+  margin-bottom: 60px;
+}
+
+#wrap > .content-container > .post-list-container article.post header.post-header {
+  padding: 14px 20px;
+  font-size: 14px;
+}
+
+#wrap > .content-container > .post-list-container article.post header.post-header .header-username {
+  display: inline-block;
+}
+
+#wrap > .content-container > .post-list-container article.post header.post-header .header-date {
+  float: right;
+}
+
+#wrap > .content-container > .post-list-container article.post header.post-header form {
+  display: inline-block;
+}
+
+#wrap > .content-container > .post-list-container article.post header.post-header form .btn-delete-post {
+  display: inline-block;
+  margin-left: 10px;
+  border: 1px solid #FF5252;
+  border-radius: 3px;
+  padding: 3px 6px;
+  color: #FF5252;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-image-container {
+  font-size: 0;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-image-container img.post-image {
+  width: 100%;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-bottom-container {
+  padding: 24px;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-bottom-container .post-content {
+  margin-bottom: 5px;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-bottom-container .post-like-users {
+  margin-bottom: 5px;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-bottom-container .post-like-count {
+  display: inline-block;
+  margin: 6px 0px;
+  font-weight: bold;
+  color: #333;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-bottom-container .post-comments {
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 20px;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-bottom-container .post-comments .post-comment .comment-author {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-bottom-container .post-comments .post-comment .comment-content {
+  display: inline-block;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-bottom-container .post-comments .post-comment form {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-bottom-container .post-comments .post-comment form .btn-delete-comment {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 3px;
+  box-sizing: border-box;
+  color: #E57373;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-bottom-container .post-comment-form-container {
+  padding-top: 20px;
+  position: relative;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-bottom-container .post-comment-form-container form.form-like {
+  float: left;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-bottom-container .post-comment-form-container .btn-like {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+#wrap > .content-container > .post-list-container article.post .post-bottom-container .post-comment-form-container input.input-comment {
+  border: none;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  width: 90%;
+  left: 30px;
+  height: 24px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+#wrap > .content-container > .post-list-container a#btn-add-post {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.0975);
+  padding: 5px 10px;
+  text-decoration: none;
+  background-color: #333;
+  color: white;
+  border-radius: 3px;
+}

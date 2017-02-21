@@ -1,0 +1,26 @@
+<!--<form action="" method="POST">{% csrf_token %}-->
+    <!--<fildset>-->
+        <!--<lengend>LOGIN</lengend>-->
+        <!--<div>-->
+            <!--<input type="text" name="username" placeholder="ID를 입력하세요">-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<input type="text" name="password" placeholder="password를 입력하세요">-->
+        <!--</div>-->
+        <!--<button type="submit">SUBMIT</button>-->
+    <!--</fildset>-->
+<!--</form>-->
+
+<form action="" method="POST">{% csrf_token %}
+    {% if form.non_field_errors %}
+        {{ form.non_filed_errors }}
+    {% endif %}
+
+    {% for field in form %}
+    <div>
+        {{ field.label_tag }}
+        {{ field }}
+    </div>
+    {% endfor %}
+    <button type="submit">Login</button>
+</form>

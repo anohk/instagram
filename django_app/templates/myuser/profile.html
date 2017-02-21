@@ -1,0 +1,28 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+<div class="profile-container">
+    <div class="profile-top">
+        <img src="" alt="" class="img-profile">
+        <div class="profile-text">
+            <div class="profile-img"></div>
+            <div class="profile-image-container">
+                <img src="{{ MEDIA_URL }}{{ user.profile_img }}" class="profile-image">
+            </div>
+            <span class="profile-username">{{ user.username }}</span>
+            <a class="btn" href="{% url 'myuser:change_profile_img' %}">프로필 편집</a>
+            <a
+                    class="btn"
+                    href="{% url 'myuser:logout' %}">
+                Logout</a>
+        </div>
+        <div class="text-status">
+            <span class="status-item">게시물 {{ post_count }}개</span>
+            <span class="status-item">팔로워 {{ follower_count }}명</span>
+            <span class="status-item">팔로우 {{ following_count }}명</span>
+        </div>
+        <div class="text-name"></div>
+    </div>
+</div>
+
+{% endblock %}
